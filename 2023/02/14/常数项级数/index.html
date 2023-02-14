@@ -16,15 +16,15 @@
   <meta name="author" content="__hfzh">
   <meta name="keywords" content="">
   
-    <meta name="description" content="级数的概念与性质 级数的概念 设\({u_n}\)是一数列，则表达式\(\displaystyle\sum_{n&#x3D;1}^{\infty}&#x3D;u_1+u_2+\dots+u_n+\dots\)称为无穷级数。\(s_n&#x3D;\displaystyle\sum_{i&#x3D;1}^nu_i\)称为级数的部分和，若是部分和数列\({s_n}\)有极限，即 \(\displaystyle\lim\limits_{n\">
+    <meta name="description" content="级数的概念与性质 级数的敛散性的判断是这一小节中最主要的考题，除了使用级数的审敛准则，也要用到级数的一些性质，还有一些常用结论。 级数的概念 设\({u_n}\)是一数列，则表达式\(\displaystyle\sum_{n&#x3D;1}^{\infty}&#x3D;u_1+u_2+\dots+u_n+\dots\)称为无穷级数。\(S_n&#x3D;\displaystyle\sum_{i&#x3D;1}^nu_i\)称为级数">
 <meta property="og:type" content="article">
 <meta property="og:title" content="常数项级数">
 <meta property="og:url" content="http://example.com/2023/02/14/%E5%B8%B8%E6%95%B0%E9%A1%B9%E7%BA%A7%E6%95%B0/index.html">
 <meta property="og:site_name" content="Hexo">
-<meta property="og:description" content="级数的概念与性质 级数的概念 设\({u_n}\)是一数列，则表达式\(\displaystyle\sum_{n&#x3D;1}^{\infty}&#x3D;u_1+u_2+\dots+u_n+\dots\)称为无穷级数。\(s_n&#x3D;\displaystyle\sum_{i&#x3D;1}^nu_i\)称为级数的部分和，若是部分和数列\({s_n}\)有极限，即 \(\displaystyle\lim\limits_{n\">
+<meta property="og:description" content="级数的概念与性质 级数的敛散性的判断是这一小节中最主要的考题，除了使用级数的审敛准则，也要用到级数的一些性质，还有一些常用结论。 级数的概念 设\({u_n}\)是一数列，则表达式\(\displaystyle\sum_{n&#x3D;1}^{\infty}&#x3D;u_1+u_2+\dots+u_n+\dots\)称为无穷级数。\(S_n&#x3D;\displaystyle\sum_{i&#x3D;1}^nu_i\)称为级数">
 <meta property="og:locale" content="zh_CN">
 <meta property="article:published_time" content="2023-02-14T03:43:52.758Z">
-<meta property="article:modified_time" content="2023-02-14T04:19:10.932Z">
+<meta property="article:modified_time" content="2023-02-14T05:44:39.425Z">
 <meta property="article:author" content="__hfzh">
 <meta property="article:tag" content="级数">
 <meta name="twitter:card" content="summary_large_image">
@@ -69,7 +69,7 @@
   <script id="fluid-configs">
     var Fluid = window.Fluid || {};
     Fluid.ctx = Object.assign({}, Fluid.ctx)
-    var CONFIG = {"hostname":"example.com","root":"/","version":"1.9.4","typing":{"enable":true,"typeSpeed":70,"cursorChar":"_","loop":false,"scope":[]},"anchorjs":{"enable":true,"element":"h1,h2,h3,h4,h5,h6","placement":"left","visible":"hover","icon":""},"progressbar":{"enable":true,"height_px":3,"color":"#29d","options":{"showSpinner":false,"trickleSpeed":100}},"code_language":{"enable":true,"default":"TEXT"},"copy_btn":true,"image_caption":{"enable":true},"image_zoom":{"enable":true,"img_url_replace":["",""]},"toc":{"enable":true,"placement":"right","headingSelector":"h1,h2,h3,h4,h5,h6","collapseDepth":0},"lazyload":{"enable":true,"loading_img":"/img/loading.gif","onlypost":false,"offset_factor":2},"web_analytics":{"enable":false,"follow_dnt":true,"baidu":null,"google":null,"gtag":null,"tencent":{"sid":null,"cid":null},"woyaola":null,"cnzz":null,"leancloud":{"app_id":null,"app_key":null,"server_url":null,"path":"window.location.pathname","ignore_local":false}},"search_path":"/local-search.xml"};
+    var CONFIG = {"hostname":"example.com","root":"/","version":"1.9.4","typing":{"enable":true,"typeSpeed":70,"cursorChar":"_","loop":false,"scope":[]},"anchorjs":{"enable":true,"element":"h1,h2,h3,h4,h5,h6","placement":"left","visible":"hover","icon":""},"progressbar":{"enable":true,"height_px":3,"color":"#29d","options":{"showSpinner":false,"trickleSpeed":100}},"code_language":{"enable":true,"default":"TEXT"},"copy_btn":true,"image_caption":{"enable":true},"image_zoom":{"enable":true,"img_url_replace":["",""]},"toc":{"enable":true,"placement":"right","headingSelector":"h1,h2,h3,h4,h5,h6","collapseDepth":1},"lazyload":{"enable":true,"loading_img":"/img/loading.gif","onlypost":false,"offset_factor":2},"web_analytics":{"enable":false,"follow_dnt":true,"baidu":null,"google":null,"gtag":null,"tencent":{"sid":null,"cid":null},"woyaola":null,"cnzz":null,"leancloud":{"app_id":null,"app_key":null,"server_url":null,"path":"window.location.pathname","ignore_local":false}},"search_path":"/local-search.xml"};
 
     if (CONFIG.web_analytics.follow_dnt) {
       var dntVal = navigator.doNotTrack || window.doNotTrack || navigator.msDoNotTrack;
@@ -220,7 +220,7 @@
       <span class="post-meta mr-2">
         <i class="iconfont icon-chart"></i>
         
-          455 字
+          891 字
         
       </span>
     
@@ -231,7 +231,7 @@
         
         
         
-          3 分钟
+          5 分钟
         
       </span>
     
@@ -274,7 +274,7 @@
               <p class="note note-info">
                 
                   
-                    本文最后更新于：2023年2月14日 中午
+                    本文最后更新于：2023年2月14日 下午
                   
                 
               </p>
@@ -283,15 +283,17 @@
               <div class="markdown-body">
                 
                 <h2 id="级数的概念与性质">级数的概念与性质</h2>
+<p><strong><span
+style="color:#00BFFF; ">级数的敛散性的判断是这一小节中最主要的考题，除了使用级数的审敛准则，也要用到级数的一些性质，还有一些常用结论。</span></strong></p>
 <h3 id="级数的概念">级数的概念</h3>
 <p>设<span class="math inline">\({u_n}\)</span>是一数列，则表达式<span
 class="math inline">\(\displaystyle\sum_{n=1}^{\infty}=u_1+u_2+\dots+u_n+\dots\)</span>称为无穷级数。<span
-class="math inline">\(s_n=\displaystyle\sum_{i=1}^nu_i\)</span>称为级数的<strong><span
+class="math inline">\(S_n=\displaystyle\sum_{i=1}^nu_i\)</span>称为级数的<strong><span
 style="color: #00008B; ">部分和</span></strong>，若是<strong><span
 style="color: #00008B; ">部分和</span></strong>数列<span
 class="math inline">\({s_n}\)</span>有极限，即 <span
 class="math inline">\(\displaystyle\lim\limits_{n\to \infty}
-s_n=s\)</span>，则称级数<span
+S_n=s\)</span>，则称级数<span
 class="math inline">\(\displaystyle\sum_{n=1}^{\infty}u_n\)</span>收敛。若是部分和极限不存在，则级数<span
 class="math inline">\(\displaystyle\sum_{n=1}^{\infty}u_n\)</span>发散。</p>
 <p class="note note-primary">
@@ -301,7 +303,30 @@ class="math inline">\(\displaystyle\sum_{n=1}^{\infty}u_n\)</span>收敛<span
 class="math inline">\(\Leftrightarrow \displaystyle\lim\limits_{n\to
 \infty} s_n\)</span>存在
 </p>
-<span class="label label-$\displaystyle\sum_{n=1}^{\infty}u_n$">text</span>
+<h3 id="审敛准则">审敛准则</h3>
+<h4 id="正项级数displaystylesum_n1inftyu_n其中u_ngeq0">正项级数（<span
+class="math inline">\(\displaystyle\sum_{n=1}^{\infty}u_n\)</span>其中<span
+class="math inline">\(u_n\geq0\)</span>）</h4>
+<ul>
+<li><p><span
+class="math inline">\(\displaystyle\sum_{n=1}^{\infty}u_n\)</span>收敛<span
+class="math inline">\(\Leftrightarrow\)</span><span
+class="math inline">\({S_n}\)</span>上有界</p></li>
+<li><p>比较判别法：设<span class="math inline">\(u_n\leq
+v_n\)</span>（<strong><span
+style="color: #00008B; ">注意适用条件是正项级数，任意项级数就不一定正确</span></strong>）</p>
+<ul>
+<li><span
+class="math inline">\(\displaystyle\sum_{n=1}^{\infty}v_n\)</span>收敛<span
+class="math inline">\(\Rightarrow\)</span><span
+class="math inline">\(\displaystyle\sum_{n=1}^{\infty}u_n\)</span>收敛</li>
+<li><span
+class="math inline">\(\displaystyle\sum_{n=1}^{\infty}v_n\)</span>发散<span
+class="math inline">\(\Rightarrow\)</span><span
+class="math inline">\(\displaystyle\sum_{n=1}^{\infty}u_n\)</span>发散</li>
+</ul></li>
+<li><p>比较判别法的极限形式</p></li>
+</ul>
 
                 
               </div>
