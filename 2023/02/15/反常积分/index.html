@@ -24,7 +24,7 @@
 <meta property="og:description" content="反常积分 反常积分的的敛散性的判断是这一小节中最主要的考题，还有反常积分的计算。 反常积分的概念 无穷区间上的反常积分  设\(f(x)\)定义在\([a,+\infty)\)上，且在任意一个闭区间\([a,b]\)上存在定积分\(\displaystyle \int_a^bf(x)\mathrm{d}x\) ，定义\[\begin{equation}\displaystyle \i">
 <meta property="og:locale" content="zh_CN">
 <meta property="article:published_time" content="2023-02-15T03:49:25.530Z">
-<meta property="article:modified_time" content="2023-02-15T09:16:22.841Z">
+<meta property="article:modified_time" content="2023-02-15T12:59:11.140Z">
 <meta property="article:author" content="__hfzh">
 <meta property="article:tag" content="反常积分">
 <meta name="twitter:card" content="summary_large_image">
@@ -220,7 +220,7 @@
       <span class="post-meta mr-2">
         <i class="iconfont icon-chart"></i>
         
-          2.1k 字
+          2.7k 字
         
       </span>
     
@@ -231,7 +231,7 @@
         
         
         
-          12 分钟
+          15 分钟
         
       </span>
     
@@ -274,7 +274,7 @@
               <p class="note note-info">
                 
                   
-                    本文最后更新于：2023年2月15日 下午
+                    本文最后更新于：2023年2月15日 晚上
                   
                 
               </p>
@@ -341,8 +341,26 @@ class="math display">\[\displaystyle\int_a^bf(x)\mathrm{d}x=\int_{a}^c
 f(x)\mathrm{d}x+\int_{c}^b
 f(x)\mathrm{d}x=\lim\limits_{\varepsilon_1\to0^+}\int_{a}^{c-\varepsilon_1}f(x)\mathrm{d}x+\lim\limits_{\varepsilon_2\to0^+}\int_{c+\varepsilon_2}^{b}f(x)\mathrm{d}x\]</span></p></li>
 </ul>
-<h3 id="反常积分敛散性判别">反常积分敛散性判别😁</h3>
+<h3 id="反常积分敛散性判别">反常积分敛散性判别🤩😎</h3>
 <h4 id="四个常用的尺度">四个常用的尺度</h4>
+<ul>
+<li><span
+class="math inline">\(\displaystyle\int_a^{+\infty}\frac{\mathrm{d}x}{x^p}
+\left\{  \begin{array}{ll}  p&gt;1&amp;收敛\\  p\leq
+1&amp;发散  \end{array}  \right. \quad a&gt;0\)</span></li>
+<li><span
+class="math inline">\(\displaystyle\int_a^{+\infty}\frac{\mathrm{d}x}{x\mathrm{ln}^px}
+\left\{  \begin{array}{ll}  p&gt;1&amp;收敛\\  p\leq
+1&amp;发散  \end{array}  \right. \quad a&gt;1\)</span></li>
+<li><span
+class="math inline">\(\displaystyle\int_a^{+\infty}x^ke^{-\lambda x}
+\left\{  \begin{array}{ll}  \lambda&gt;0&amp;收敛\\  \lambda\leq
+0&amp;发散  \end{array}  \right. \quad k\geq0\)</span></li>
+<li><span
+class="math inline">\(\displaystyle\int_a^b\frac{\mathrm{d}x}{(x-a)^p}
+\left\{  \begin{array}{ll}  p&lt;1&amp;收敛\\  p\geq
+1&amp;发散  \end{array}  \right. \quad a&gt;0\)</span></li>
+</ul>
 <h4 id="比较判别法">比较判别法</h4>
 <p><strong>判别的时候要求每个积分有且仅有一个奇点，否则找中间点拆开讨论。</strong></p>
 <div class="note note-primary">
