@@ -16,22 +16,22 @@
   <meta name="author" content="__hfzh">
   <meta name="keywords" content="">
   
-    <meta name="description" content="级数的概念与性质 级数的敛散性的判断是这一小节中最主要的考题，除了使用级数的审敛准则，也要用到级数的一些性质，还有一些常用结论。 级数的概念 设\({u_n}\)是一数列，则表达式\(\displaystyle\sum_{n&#x3D;1}^{\infty}&#x3D;u_1+u_2+\dots+u_n+\dots\)称为无穷级数。\(S_n&#x3D;\displaystyle\sum_{i&#x3D;1}^nu_i\)称为级数">
+    <meta name="description" content="本篇博客中仅针对数学一中的\(\Gamma\)函数，大纲并没有要求，仅为遇到能够方便解题，对概率论一些求解有帮助。仅进行简单的证明，辅助记忆。 伽马函数的定义 伽马函数\(\Gamma(z)\)通常定义为：\[\Gamma(z)&#x3D;\displaystyle\int_0^{\infty}e^{-t}t^{z-1}\mathrm{d}t\] 伽马函数的性质 \[\Gamma(z+1)&#x3D;z\Ga">
 <meta property="og:type" content="article">
-<meta property="og:title" content="常数项级数">
-<meta property="og:url" content="http://example.com/2023/02/14/%E5%B8%B8%E6%95%B0%E9%A1%B9%E7%BA%A7%E6%95%B0/index.html">
+<meta property="og:title" content="伽马函数">
+<meta property="og:url" content="http://example.com/2023/02/18/%E4%BC%BD%E9%A9%AC%E5%87%BD%E6%95%B0/index.html">
 <meta property="og:site_name" content="Hexo">
-<meta property="og:description" content="级数的概念与性质 级数的敛散性的判断是这一小节中最主要的考题，除了使用级数的审敛准则，也要用到级数的一些性质，还有一些常用结论。 级数的概念 设\({u_n}\)是一数列，则表达式\(\displaystyle\sum_{n&#x3D;1}^{\infty}&#x3D;u_1+u_2+\dots+u_n+\dots\)称为无穷级数。\(S_n&#x3D;\displaystyle\sum_{i&#x3D;1}^nu_i\)称为级数">
+<meta property="og:description" content="本篇博客中仅针对数学一中的\(\Gamma\)函数，大纲并没有要求，仅为遇到能够方便解题，对概率论一些求解有帮助。仅进行简单的证明，辅助记忆。 伽马函数的定义 伽马函数\(\Gamma(z)\)通常定义为：\[\Gamma(z)&#x3D;\displaystyle\int_0^{\infty}e^{-t}t^{z-1}\mathrm{d}t\] 伽马函数的性质 \[\Gamma(z+1)&#x3D;z\Ga">
 <meta property="og:locale" content="zh_CN">
-<meta property="article:published_time" content="2023-02-14T03:43:52.758Z">
-<meta property="article:modified_time" content="2023-02-15T14:59:53.695Z">
+<meta property="article:published_time" content="2023-02-18T05:47:29.245Z">
+<meta property="article:modified_time" content="2023-02-15T12:34:05.906Z">
 <meta property="article:author" content="__hfzh">
-<meta property="article:tag" content="级数">
+<meta property="article:tag" content="反常积分">
 <meta name="twitter:card" content="summary_large_image">
   
   
   
-  <title>常数项级数 - Hexo</title>
+  <title>伽马函数 - Hexo</title>
 
   <link  rel="stylesheet" href="https://lib.baomitu.com/twitter-bootstrap/4.6.1/css/bootstrap.min.css" />
 
@@ -197,7 +197,7 @@
       <div class="banner-text text-center fade-in-up">
         <div class="h2">
           
-            <span id="subtitle" data-typed-text="常数项级数"></span>
+            <span id="subtitle" data-typed-text="伽马函数"></span>
           
         </div>
 
@@ -208,8 +208,8 @@
     
       <span class="post-meta">
         <i class="iconfont icon-date-fill" aria-hidden="true"></i>
-        <time datetime="2023-02-14 11:43" pubdate>
-          2023年2月14日 中午
+        <time datetime="2023-02-18 13:47" pubdate>
+          2023年2月18日 下午
         </time>
       </span>
     
@@ -220,7 +220,7 @@
       <span class="post-meta mr-2">
         <i class="iconfont icon-chart"></i>
         
-          5.8k 字
+          1.3k 字
         
       </span>
     
@@ -231,7 +231,7 @@
         
         
         
-          33 分钟
+          8 分钟
         
       </span>
     
@@ -269,7 +269,7 @@
         <div id="board">
           <article class="post-content mx-auto">
             <!-- SEO header -->
-            <h1 style="display: none">常数项级数</h1>
+            <h1 style="display: none">伽马函数</h1>
             
               <p class="note note-info">
                 
@@ -282,222 +282,39 @@
             
               <div class="markdown-body">
                 
-                <h2 id="级数的概念与性质">级数的概念与性质</h2>
+                <p><strong><span style="color:#00BFFF; ">本篇博客中仅针对数学一中的<span
+class="math inline">\(\Gamma\)</span>函数，大纲并没有要求，仅为遇到能够方便解题，对概率论一些求解有帮助。仅进行简单的证明，辅助记忆。</span></strong></p>
+<h2 id="伽马函数的定义">伽马函数的定义</h2>
+<p>伽马函数<span
+class="math inline">\(\Gamma(z)\)</span>通常定义为：<span
+class="math display">\[\Gamma(z)=\displaystyle\int_0^{\infty}e^{-t}t^{z-1}\mathrm{d}t\]</span></p>
+<h2 id="伽马函数的性质">伽马函数的性质</h2>
+<p><span class="math display">\[\Gamma(z+1)=z\Gamma(z)\]</span></p>
 <p><strong><span
-style="color:#00BFFF; ">级数的敛散性的判断是这一小节中最主要的考题，除了使用级数的审敛准则，也要用到级数的一些性质，还有一些常用结论。</span></strong></p>
-<h3 id="级数的概念">级数的概念</h3>
-<p>设<span class="math inline">\({u_n}\)</span>是一数列，则表达式<span
-class="math inline">\(\displaystyle\sum_{n=1}^{\infty}=u_1+u_2+\dots+u_n+\dots\)</span>称为无穷级数。<span
-class="math inline">\(S_n=\displaystyle\sum_{i=1}^nu_i\)</span>称为级数的<strong><span
-style="color: #00008B; ">部分和</span></strong>，若是<strong><span
-style="color: #00008B; ">部分和</span></strong>数列<span
-class="math inline">\({s_n}\)</span>有极限，即 <span
-class="math inline">\(\displaystyle\lim\limits_{n\to \infty}
-S_n=s\)</span>，则称级数<span
-class="math inline">\(\displaystyle\sum_{n=1}^{\infty}u_n\)</span>收敛。若是部分和极限不存在，则级数<span
-class="math inline">\(\displaystyle\sum_{n=1}^{\infty}u_n\)</span>发散。</p>
-<div class="note note-primary">
-            <p>注意:这里相加的数列项数是无穷个，不可以简单认为是n个。<br />以上可以概括为<spanclass="math inline">\(\displaystyle\sum_{n=1}^{\infty}u_n\)</span>收敛<spanclass="math inline">\(\Leftrightarrow \displaystyle\lim\limits_{n\to\infty} s_n\)</span>存在</p>
-          </div>
-<h3 id="审敛准则">审敛准则</h3>
-<h4 id="正项级数displaystylesum_n1inftyu_n其中u_ngeq0">正项级数（<span
-class="math inline">\(\displaystyle\sum_{n=1}^{\infty}u_n\)</span>其中<span
-class="math inline">\(u_n\geq0\)</span>）</h4>
-<ul>
-<li><p><span
-class="math inline">\(\displaystyle\sum_{n=1}^{\infty}u_n\)</span>收敛<span
-class="math inline">\(\Leftrightarrow\)</span><span
-class="math inline">\({S_n}\)</span>上有界</p></li>
-<li><p><strong>比较判别法：</strong>设<span
-class="math inline">\(u_n\leq v_n\)</span>（<strong><span
-style="color: #00008B; ">注意适用条件是正项级数，任意项级数就不一定正确</span></strong>）</p>
-<ul>
-<li><span
-class="math inline">\(\displaystyle\sum_{n=1}^{\infty}v_n\)</span>收敛<span
-class="math inline">\(\Rightarrow\)</span><span
-class="math inline">\(\displaystyle\sum_{n=1}^{\infty}u_n\)</span>收敛</li>
-<li><span
-class="math inline">\(\displaystyle\sum_{n=1}^{\infty}v_n\)</span>发散<span
-class="math inline">\(\Rightarrow\)</span><span
-class="math inline">\(\displaystyle\sum_{n=1}^{\infty}u_n\)</span>发散</li>
-</ul></li>
-<li><p><strong>比较判别法的极限形式</strong></p>
+style="color: #00008B; ">做如下简单证明：</span></strong></p>
 <p><span
-class="math display">\[\lim\limits_{n\to\infty}\displaystyle\frac{u_n}{v_n}=
-\left\{\begin{array}{l}
-    0&amp;\left\{
-    \begin{array}{ll}
-        若\displaystyle\sum_{n=1}^{\infty}v_n收敛，则\displaystyle\sum_{n=1}^{\infty}u_n收敛\\
-        若\displaystyle\sum_{n=1}^{\infty}u_n发散，则\displaystyle\sum_{n=1}^{\infty}v_n发散
-  \end{array}
-  \right.\\
-    +\infty&amp;\left\{
-    \begin{array}{ll}
-        若\displaystyle\sum_{n=1}^{\infty}u_n收敛，则\displaystyle\sum_{n=1}^{\infty}v_n收敛\\
-        若\displaystyle\sum_{n=1}^{\infty}v_n发散，则\displaystyle\sum_{n=1}^{\infty}u_n发散
-  \end{array}
-  \right.\\    
-A\ne0 &amp;\Rightarrow
-\displaystyle\sum_{n=1}^{\infty}v_n与\displaystyle\sum_{n=1}^{\infty}u_n敛散性一致
-\end{array}
-\right.\]</span></p>
-<div class="note note-secondary">
-            <p><strong>比较判别法和比较判别法的极限形式更加形象的说法是自己与别人进行比较，往往会选取等比级数和p级数来比较，已便于确定敛散性。</strong></p>
-          </div>
-<p>两个常用的尺度（P级数和等比级数）</p>
-<ul>
-<li><span
-class="math inline">\(\displaystyle\sum_{n=1}^{\infty}\frac{1}{n^p}=\left\{  \begin{array}{ll}  p&gt;1&amp;收敛\\  p\leq1&amp;发散  \end{array}  \right.\)</span></li>
-<li><span
-class="math inline">\(\displaystyle\sum_{n=1}^{\infty}aq^n=\left\{  \begin{array}{ll}  p&lt;1&amp;收敛\\  p\geq1&amp;发散  \end{array}  \right.\)</span></li>
-</ul></li>
-<li><p><strong>比值法</strong></p>
-<p>设<span
-class="math inline">\(\lim\limits_{n\to\infty}\displaystyle\frac{u_{n+1}}{u_n}=\rho\left\{  \begin{array}{lll}  &lt;1&amp;\displaystyle\sum_{n=1}^{\infty}u_n
-收敛\\  =1&amp;\displaystyle\sum_{n=1}^{\infty}u_n不确定 \\
-&gt;1&amp;\displaystyle\sum_{n=1}^{\infty}u_n发散
-\end{array}\right.\)</span></p></li>
-<li><p><strong>根值法</strong></p>
+class="math display">\[\begin{array}{ll}\Gamma(z+1)&amp;=\displaystyle\int_0^{\infty}e^{-t}t^{z}\mathrm{d}t
+\\&amp;=-\displaystyle\int_0^{\infty}t^z\mathrm{de^{-t}}\\&amp;=-t^ze^{-t}\Big|_{0}^{\infty}+z\displaystyle\int_0^{\infty}e^{-t}t^{z-1}\mathrm{d}t\\&amp;=z\Gamma(z)\end{array}\]</span></p>
+<p><strong><span style="color: #00008B; ">下面算<span
+class="math inline">\(\Gamma(1)，\Gamma(\displaystyle\frac{1}{2})\)</span>两个初始值</span></strong></p>
 <p><span
-class="math inline">\(\lim\limits_{n\to\infty}\displaystyle\sqrt[n]{u_n}=\rho\left\{  \begin{array}{lll}  &lt;1&amp;\displaystyle\sum_{n=1}^{\infty}u_n
-收敛\\  =1&amp;\displaystyle\sum_{n=1}^{\infty}u_n不确定 \\
-&gt;1&amp;\displaystyle\sum_{n=1}^{\infty}u_n发散
-\end{array}\right.\)</span></p>
-<div class="note note-primary">
-            <p><strong>比值法与根值法往往是在题目中出现<spanclass="math inline">\(a^n，n\mathrm{!}，n^n\)</span></strong>这些明显的标识的时候使用，其余判断敛散性的方法要用比较判别法，找出一个尺度。</p>
-          </div></li>
-<li><p><strong>积分判别法</strong>&lt;<strong>考纲新增</strong>&gt;</p>
-<p>设<span
-class="math inline">\(\displaystyle\sum_{n=1}^{\infty}u_n\)</span>为正项级数，若存在<span
-class="math inline">\([1,+\infty)\)</span>上单调减少的肺腑连续函数<span
-class="math inline">\(f(x)\)</span>,使得<span
-class="math inline">\(u_n=f(n)\)</span>，则级数<span
-class="math inline">\(\displaystyle\sum_{n=1}^{\infty}u_n\)</span>与反常积分<span
-class="math inline">\(\displaystyle
-\int_1^{+\infty}f(x)\mathrm{d}x\)</span>的敛散性相同。</p></li>
-</ul>
-<h4
-id="交错级数displaystylesum_n1infty-1n-1u_n其中u_ngeq0">交错级数（<span
-class="math inline">\(\displaystyle\sum_{n=1}^{\infty}(-1)^{n-1}u_n\)</span>其中<span
-class="math inline">\(u_n\geq0\)</span>）</h4>
-<p><strong>莱布尼兹准则：</strong></p>
-<ul>
-<li><span class="math inline">\(\displaystyle\lim\limits_{n\to
-\infty}u_n=0\)</span></li>
-<li><span class="math inline">\(u_{n+1}\leq u_n\)</span></li>
-</ul>
-<p>若满足以上两点，则<span
-class="math inline">\(\displaystyle\sum_{n=1}^{\infty}(-1)^{n-1}u_n\)</span>收敛。<br /></p>
-<p><strong><span style="color: #00008B; ">注意：由<span
-class="math inline">\(\displaystyle\sum_{n=1}^{\infty}(-1)^{n-1}u_n\)</span>收敛 
- <span class="math inline">\(\Rightarrow\displaystyle\lim\limits_{n\to
-\infty}u_n=0\)</span>，但是不可以得到<span
-class="math inline">\(\{u_n\}\)</span>单调减！ </span></strong></p>
-<h4 id="任意项级数">任意项级数</h4>
-<ul>
-<li><p>绝对收敛</p>
-<p>若<span
-class="math inline">\(\displaystyle\sum_{n=1}^{\infty}|u_n|\)</span>收敛，则称若<span
-class="math inline">\(\displaystyle\sum_{n=1}^{\infty}u_n\)</span>绝对收敛，且<span
-class="math inline">\(\displaystyle\sum_{n=1}^{\infty}u_n\)</span>收敛。</p></li>
-<li><p>条件收敛</p>
-<p>若<span
-class="math inline">\(\displaystyle\sum_{n=1}^{\infty}|u_n|\)</span>发散，<span
-class="math inline">\(\displaystyle\sum_{n=1}^{\infty}u_n\)</span>收敛，则称<span
-class="math inline">\(\displaystyle\sum_{n=1}^{\infty}u_n\)</span>条件收敛。<br /></p>
-<div class="note note-primary">
-            <p><strong><spanstyle="color: #00008B; ">条件收敛的级数的所有正项(或者负项)构成的级数一定发散。</span></strong></p>
-          </div></li>
-</ul>
-<h3 id="级数的性质">级数的性质❤</h3>
-<h4 id="自身变换敛散性质"><strong><span
-style="color: #008080; ">自身变换敛散性质</span></strong></h4>
-<ul>
-<li><span
-class="math inline">\(\displaystyle\sum_{n=1}^{\infty}u_n\)</span>收敛，<span
-class="math inline">\(\displaystyle\sum_{n=1}^{\infty}|u_n|\)</span>不定</li>
-<li><span
-class="math inline">\(\displaystyle\sum_{n=1}^{\infty}u_n\)</span>收敛，<span
-class="math inline">\(\displaystyle\sum_{n=1}^{\infty}(-1)^nu_n\)</span>不定</li>
-<li><span
-class="math inline">\(\displaystyle\sum_{n=1}^{\infty}u_n\)</span>收敛，<span
-class="math inline">\(\displaystyle\sum_{n=1}^{\infty}(-1)^n\frac{u_n}{n}\)</span>不定，如<span
-class="math inline">\(\displaystyle\sum_{n=2}^{\infty}\frac{(-1)^n}{\mathrm{ln}n}\)</span>收敛，而<span
-class="math inline">\(\displaystyle\sum_{n=2}^{\infty}\frac{1}{n\mathrm{ln}n}\)</span>发散</li>
-<li><span
-class="math inline">\(\displaystyle\sum_{n=1}^{\infty}u^2_n\)</span>收敛，则<span
-class="math inline">\(\displaystyle\sum_{n=1}^{\infty}\frac{u_n}{n}\)</span>绝对收敛<span
-class="math inline">\(\Big(\displaystyle\Big|\frac{u_n}{n}\Big|\leq\frac{1}{2}(u^2_n+\frac{1}{n^2})\Big)\)</span></li>
-<li><span
-class="math inline">\(\displaystyle\sum_{n=1}^{\infty}u_n\)</span>收敛<span
-class="math inline">\(\left\{\begin{array}{ll}
-u_n\geq0&amp;\displaystyle\sum_{n=1}^{\infty}u^2_n绝对收敛，(n足够大u_n&lt;1,u_n^2&lt;u_n)\\
-u_n任意&amp;\displaystyle\sum_{n=1}^{\infty}u^2_n不定，如u_n=(-1)^n\frac{1}{\sqrt{n}}
-，\displaystyle\sum_{n=1}^{\infty}u_n^2就发散\end{array}\right.\)</span></li>
-</ul>
-<h4 id="同一级数前后两项构成的新级数性质"><strong><span
-style="color: #008080; ">同一级数前后两项构成的新级数性质</span></strong></h4>
-<ul>
-<li><span
-class="math inline">\(\displaystyle\sum_{n=1}^{\infty}u_n\)</span>收敛，则<span
-class="math inline">\(\left\{\begin{array}{ll}
-\displaystyle\sum_{n=1}^{\infty}(u_n+u_{n+1})收敛&amp;
-\displaystyle\sum_{n=1}^{\infty}u_{n+1}+\sum_{n=1}^{\infty}u_{n}收敛\\  \displaystyle\sum_{n=1}^{\infty}(u_n-u_{n+1})收敛
-&amp;
-\displaystyle\sum_{n=1}^{\infty}u_{n+1}-\sum_{n=1}^{\infty}u_{n}收敛 \\
-\end{array}\right.\)</span></li>
-<li><span
-class="math inline">\(\displaystyle\sum_{n=1}^{\infty}u_n\)</span>收敛，则<span
-class="math inline">\(\left\{\begin{array}{ll} u_n\geq0&amp;
-\displaystyle\sum_{n=1}^{\infty}u_n\cdot u_{n+1}绝对收敛(u_n\cdot
-u_{n+1}\leq\displaystyle\frac{u_n^2+u_{n+1}^2}{2})\\  不定&amp;
-u_n=(-1)^n\displaystyle\frac{1}{\sqrt{n}}，u_n\cdot
-u_{n+1}=\frac{-1}{\sqrt{n(n+1)}}发散 \\ \end{array}\right.\)</span></li>
-</ul>
-<h4 id="同一级数奇偶两项构成的新级数性质"><strong><span
-style="color: #008080; ">同一级数奇偶两项构成的新级数性质</span></strong></h4>
-<ul>
-<li><span
-class="math inline">\(\displaystyle\sum_{n=1}^{\infty}u_n\)</span>收敛，则<span
-class="math inline">\(\displaystyle\sum_{n=1}^{\infty}(u_{2n-1}+u_{2n})\)</span>收敛。(收敛级数加括号任然收敛，提高收敛性，如：1-11-1<span
-class="math inline">\(\cdots\)</span>)</li>
-<li>上条结论反过来用？加上<span
-class="math inline">\(\displaystyle\lim\limits_{n\to
-\infty}u_n=0\)</span>即可</li>
-<li><span
-class="math inline">\(\displaystyle\sum_{n=1}^{\infty}u_n\)</span>收敛，<span
-class="math inline">\(\displaystyle\sum_{n=1}^{\infty}(u_{2n-1}-u_{2n})\)</span>不定</li>
-</ul>
-<h4 id="几个不同级数之间运算性质"><strong><span
-style="color: #008080; ">几个不同级数之间运算性质</span></strong></h4>
-<ul>
-<li><p><strong><span style="color: #191970; ">收敛<span
-class="math inline">\(\pm\)</span>收敛=收敛</span></strong> <span
-class="math inline">\(\quad\)</span> <strong><span
-style="color:  #191970; ">发散+收敛=发散</span></strong></p></li>
-<li><p><strong><span style="color: #191970; ">条件收敛<span
-class="math inline">\(\pm\)</span>绝对收敛=条件收敛</span></strong>
-<span class="math inline">\(\quad\)</span> <strong><span
-style="color: #191970; ">绝对收敛<span
-class="math inline">\(\pm\)</span>绝对收敛=绝对收敛</span></strong></p></li>
-<li><p>若<span
-class="math inline">\(\displaystyle\sum_{n=1}^{\infty}u_n\)</span>发散，<span
-class="math inline">\(\displaystyle\sum_{n=1}^{\infty}v_n\)</span>发散，则<span
-class="math inline">\(\left\{\begin{array}{ll}  u_n\geq0，v_n\geq0时&amp;\displaystyle\sum_{n=1}^{\infty}(u_n+v_n)发散\\  任意时&amp;不定  \end{array}\right.\)</span></p>
-<p>不定为可发散可收敛。<br />发散：<span
-class="math inline">\(u_n=1,v_n=-2\)</span>。</p>
-<p>收敛：<span class="math inline">\(u_n\)</span>为<span
-class="math inline">\(\displaystyle\sum_{n=1}^{\infty}(-1)^{n-1}u_n\)</span>奇数次项，<span
-class="math inline">\(u_n\)</span>为<span
-class="math inline">\(\displaystyle\sum_{n=1}^{\infty}(-1)^{n-1}u_n\)</span>偶数次项。</p></li>
-<li><p>若<span
-class="math inline">\(\displaystyle\sum_{n=1}^{\infty}u_n\)</span>收敛，<span
-class="math inline">\(\displaystyle\sum_{n=1}^{\infty}v_n\)</span>收敛，则<br /><span
-class="math inline">\(\left\{\begin{array}{ll}  u_n\geq0，v_n\geq0时&amp;\displaystyle\sum_{n=1}^{\infty}u_n\cdot
-v_n收敛(u_n\cdot
-v_n\leq\displaystyle\frac{u_n^2+v_n^2}{2})\\  哇坑&amp;挖坑 \\ waken
-&amp;waken  \end{array}\right.\)</span></p></li>
-</ul>
+class="math inline">\(\Gamma(1)=\displaystyle\int_0^{+\infty}e^{-x}\mathrm{d}x=-e^x\Big|_0^{+
+\infty}=1\)</span></p>
+<p>求解<span
+class="math inline">\(\Gamma(\displaystyle\frac{1}{2})\)</span>这里使用的是正态分布的分布函数来推导的。宗旨是<strong>想办法往上靠</strong></p>
+<p>对于标准正态分布，<span
+class="math inline">\(\mathrm{P(X\geq0)}=\displaystyle\int_0^{+\infty}\frac{1}{\sqrt{2\pi}}e^{-\frac{x^2}{2}}\mathrm{d}x=\frac{1}{2}\)</span></p>
+<p>而<span
+class="math inline">\(\Gamma(\displaystyle\frac{1}{2})=\displaystyle\int_0^{+\infty}\frac{1}{\sqrt{x}}e^{-x}\mathrm{d}x\)</span></p>
+<p>所以令<span class="math inline">\(\displaystyle
+t=\frac{x^2}{2}\)</span>，从而<span
+class="math inline">\(\mathrm{d}x=\displaystyle\frac{1}{\sqrt{2t}}\mathrm{d}t\)</span></p>
+<p>于是<span
+class="math inline">\(\displaystyle\int_0^{+\infty}\frac{1}{\sqrt{2\pi}}e^{-\frac{x^2}{2}}\mathrm{d}x=\frac{1}{2}\int_0^{+\infty}\frac{1}{\sqrt{t}}e^{-t}\mathrm{d}t=\frac{\sqrt{\pi}}{2}\)</span>，消去<span
+class="math inline">\(\displaystyle\frac{1}{2}\)</span>，得<span
+class="math inline">\(\Gamma(\displaystyle\frac{1}{2})=\sqrt{\pi}\)</span></p>
+<p><strong><span style="color: #00008B; ">有了<span
+class="math inline">\(\Gamma(1)，\Gamma(\displaystyle\frac{1}{2})\)</span>两个初始值，再利用递推关系，就可以计算给出伽马函数类型的反常积分了。</span></strong></p>
 
                 
               </div>
@@ -531,7 +348,7 @@ v_n\leq\displaystyle\frac{u_n^2+v_n^2}{2})\\  哇坑&amp;挖坑 \\ waken
     <div class="post-meta">
       <i class="iconfont icon-tags"></i>
       
-        <a href="/tags/%E7%BA%A7%E6%95%B0/">#级数</a>
+        <a href="/tags/%E5%8F%8D%E5%B8%B8%E7%A7%AF%E5%88%86/">#反常积分</a>
       
     </div>
   
@@ -543,7 +360,7 @@ v_n\leq\displaystyle\frac{u_n^2+v_n^2}{2})\\  哇坑&amp;挖坑 \\ waken
 
   <div class="license-box my-3">
     <div class="license-title">
-      <div>常数项级数</div>
+      <div>伽马函数</div>
 
     </div>
     <div class="license-meta">
@@ -556,7 +373,7 @@ v_n\leq\displaystyle\frac{u_n^2+v_n^2}{2})\\  哇坑&amp;挖坑 \\ waken
       
         <div class="license-meta-item license-meta-date">
           <div>发布于</div>
-          <div>2023年2月14日</div>
+          <div>2023年2月18日</div>
         </div>
       
       
@@ -600,7 +417,7 @@ v_n\leq\displaystyle\frac{u_n^2+v_n^2}{2})\\  哇坑&amp;挖坑 \\ waken
                   <article class="post-prev col-6">
                     
                     
-                      <a href="/2023/02/15/%E5%8F%8D%E5%B8%B8%E7%A7%AF%E5%88%86/" title="反常积分">
+                      <a href="/2023/02/18/%E5%8F%8D%E5%B8%B8%E7%A7%AF%E5%88%86/" title="反常积分">
                         <i class="iconfont icon-arrowleft"></i>
                         <span class="hidden-mobile">反常积分</span>
                         <span class="visible-mobile">上一篇</span>
@@ -610,7 +427,7 @@ v_n\leq\displaystyle\frac{u_n^2+v_n^2}{2})\\  哇坑&amp;挖坑 \\ waken
                   <article class="post-next col-6">
                     
                     
-                      <a href="/2022/12/29/hello-world/" title="Hello World">
+                      <a href="/2023/02/18/hello-world/" title="Hello World">
                         <span class="hidden-mobile">Hello World</span>
                         <span class="visible-mobile">下一篇</span>
                         <i class="iconfont icon-arrowright"></i>
