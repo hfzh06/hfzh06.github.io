@@ -24,7 +24,7 @@
 <meta property="og:description" content="基本概念 样本点\(\omega\)：随机试验的每一个基本可能结果称为一个样本点。 样本空间\(\Omega\)：随机试验的所有样本点的全体组成的集合。 随机事件：样本空间的子集称为随机事件，常用大写的字母\(A，B，C\)，...。 事件的关系与运算 不同事件  包含事件 （\(A\subset B\)）：事件A的发生必会导致B的发生。              注： \(AB">
 <meta property="og:locale" content="zh_CN">
 <meta property="article:published_time" content="2023-03-20T03:09:43.334Z">
-<meta property="article:modified_time" content="2023-03-22T13:16:02.878Z">
+<meta property="article:modified_time" content="2023-03-22T14:28:50.027Z">
 <meta property="article:author" content="__hfzh">
 <meta property="article:tag" content="贝叶斯 全概率公式 独立 互斥">
 <meta name="twitter:card" content="summary_large_image">
@@ -220,7 +220,7 @@
       <span class="post-meta mr-2">
         <i class="iconfont icon-chart"></i>
         
-          1.2k 字
+          2.1k 字
         
       </span>
     
@@ -231,7 +231,7 @@
         
         
         
-          7 分钟
+          12 分钟
         
       </span>
     
@@ -295,7 +295,7 @@ class="math inline">\(A，B，C\)</span>，...。</p>
 <li><p>包含事件 （<span class="math inline">\(A\subset
 B\)</span>）：事件A的发生必会导致B的发生。</p>
 <div class="note note-secondary">
-            <p><strong>注： <span class="math inline">\(AB \subset A\)</span>，有<span class="math inline">\(P(AB)\leqP(A)\)</span>。<br>反之若是<span class="math inline">\(P(A)\leqP(B)\)</span>，则推不出<span class="math inline">\(A\subsetB\)</span></strong></p>
+            <p><strong>注： <span class="math inline">\(AB \subset A\)</span>，有<span class="math inline">\(P(AB)\leqP(A)\)</span>。<br>反之若是<span class="math inline">\(P(A)=P(B)\)</span>，则推不出<span class="math inline">\(A\subsetB\)</span></strong></p>
           </div></li>
 <li><p>相等事件（<span class="math inline">\(A=B\)</span>）：<span
 class="math inline">\(A\subset B\)</span>且<span
@@ -319,7 +319,7 @@ class="math inline">\(AB=\varnothing\)</span>。</p>
 class="math inline">\(A\)</span>发生，而<span
 class="math inline">\(B\)</span>不发生。</p>
 <div class="note note-secondary">
-            <p><strong>注：<spanclass="math display">\[P(A-B)=P(A\overline{B})=P(A-AB)=P(A)-P(AB)\]</span><br>如果<spanclass="math inline">\(B\subset A\)</span>，那么<spanclass="math display">\[P(A-B)=P(A)-P(B)\]</span>，之所以写成上式，是要把公共部分减去。</strong></p>
+            <p><strong>注：<spanclass="math display">\[P(A-B)=P(A\overline{B})=P(A-AB)=P(A)-P(AB)\]</span><br>如果<spanclass="math inline">\(B\subset A\)</span>，那么<spanclass="math display">\[P(A-B)=P(A)-P(B)\]</span>，之所以写成上上式，是要把公共部分减去。</strong></p>
           </div></li>
 </ul>
 <h3 id="运算律">运算律</h3>
@@ -341,16 +341,78 @@ style="color: #00008B; ">规律是是：交并互换 </span></strong></p></li>
 <ul>
 <li><p><strong><span
 style="color:#00BFFF; ">事件的概率的关系是无法推出事件的之间的关系的！！！事件的关系可以推出事件概率的关系。</span></strong><br></p>
+<p>例如：<span class="math inline">\(P(A)=P(B)\nRightarrow A=B\)</span>
+；<span class="math inline">\(P(A)=0 \nRightarrow
+A=\varnothing\)</span></p>
+<p><span class="math inline">\(\quad\quad\)</span> <span
+class="math inline">\(P(AB)=0 \nRightarrow AB=\varnothing\)</span>
+；<span class="math inline">\(P(B)=1 \nRightarrow B=\Omega\)</span></p>
 <p>例如：<span class="math inline">\(A \subset B\)</span> ，有<span
 class="math inline">\(P(A)\leq P(B)\)</span>。反之若是<span
 class="math inline">\(P(A)\leq
 P(B)\)</span>，则<strong>推不出</strong><span
 class="math inline">\(A\subset B\)</span>。</p>
-<p>都是神</p></li>
+<p><strong><span style="color: #00008B; ">做题时可以利用天然的<span
+class="math inline">\(AB \subset A\)</span> ，有<span
+class="math inline">\(P(AB)\leq P(A)\)</span>解题
+。</span></strong></p></li>
 <li><p><span class="math display">\[P(A\cup B\cup
 C)=P(A)+P(B)+P(C)-P(AB)-P(AC)-P(BC)+P(ABC)\]</span><br>若此时A、B、C互斥，则<span
 class="math inline">\(P(A\cup B\cup
 C)=P(A)+P(B)+P(C)\)</span><br></p></li>
+<li><p><u><strong>独立与互斥的关系（！非常重要）</strong></u></p>
+<p>独立的性质：</p>
+<ul>
+<li><span class="math inline">\(A\)</span>与<span
+class="math inline">\(B\)</span>独立<span
+class="math inline">\(\Leftrightarrow P(AB)=P(A)P(B)\)</span></li>
+<li><span class="math inline">\(A\)</span>与<span
+class="math inline">\(B\)</span>独立<span
+class="math inline">\(\Leftrightarrow\)</span><span
+class="math inline">\(A\)</span>与<span
+class="math inline">\(\overline{B}\)</span>独立<span
+class="math inline">\(\Leftrightarrow\)</span><span
+class="math inline">\(\overline{A}\)</span>与<span
+class="math inline">\({B}\)</span>独立<span
+class="math inline">\(\Leftrightarrow\)</span><span
+class="math inline">\(\overline{A}\)</span>与<span
+class="math inline">\(\overline{B}\)</span>独立</li>
+<li><span class="math display">\[ A与B独立\Leftrightarrow
+P(B|A)=P(B|\overline{A})\Leftrightarrow
+P(B|A)+P(\overline{B}|\overline{A})=1\]</span></li>
+</ul>
+<p>互斥的性质：</p>
+<ul>
+<li><span class="math inline">\(A\)</span>与<span
+class="math inline">\(B\)</span>互斥（互不相容）<span
+class="math inline">\(\Leftrightarrow AB=\varnothing \Rightarrow
+P(AB)=0\)</span></li>
+</ul>
+<p>当<span class="math inline">\(P(A)&gt;0，P(B)&gt;0\)</span>时，</p>
+<p><span class="math inline">\(A\)</span>与<span
+class="math inline">\(B\)</span>独立，可以推出<span
+class="math inline">\(A\)</span>与<span
+class="math inline">\(B\)</span>不互斥。</p>
+<p>理由：<span class="math inline">\(P(AB)=P(A)P(B)&gt;0 \neq 0
+\Rightarrow AB\neq \varnothing\)</span>，故<span
+class="math inline">\(A\)</span>与<span
+class="math inline">\(B\)</span>不互斥</p>
+<p><span class="math inline">\(A\)</span>与<span
+class="math inline">\(B\)</span>互斥，可以推出<span
+class="math inline">\(A\)</span>与<span
+class="math inline">\(B\)</span>不独立。</p>
+<p>理由：<span class="math inline">\(AB=\varnothing \Rightarrow
+P(AB)=0\)</span> ，而<span class="math inline">\(P(A)P(B)&gt;0 \neq
+P(AB)\)</span>，故<span class="math inline">\(A\)</span>与<span
+class="math inline">\(B\)</span>不独立</p>
+<p>最终得出的结论是，<span class="math inline">\(A\)</span>与<span
+class="math inline">\(B\)</span>独立，则<span
+class="math inline">\(A\)</span>与<span
+class="math inline">\(B\)</span>不互斥。<span
+class="math inline">\(A\)</span>与<span
+class="math inline">\(B\)</span>互斥，则<span
+class="math inline">\(A\)</span>与<span
+class="math inline">\(B\)</span>不独立。</p></li>
 </ul>
 
                 
