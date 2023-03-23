@@ -24,7 +24,7 @@
 <meta property="og:description" content="基本概念 样本点\(\omega\)：随机试验的每一个基本可能结果称为一个样本点。 样本空间\(\Omega\)：随机试验的所有样本点的全体组成的集合。 随机事件：样本空间的子集称为随机事件，常用大写的字母\(A，B，C\)，...。 事件的关系与运算 不同事件  包含事件 （\(A\subset B\)）：事件A的发生必会导致B的发生。              注： \(AB">
 <meta property="og:locale" content="zh_CN">
 <meta property="article:published_time" content="2023-03-20T03:09:43.334Z">
-<meta property="article:modified_time" content="2023-03-23T00:27:50.347Z">
+<meta property="article:modified_time" content="2023-03-23T00:36:03.137Z">
 <meta property="article:author" content="__hfzh">
 <meta property="article:tag" content="贝叶斯公式">
 <meta property="article:tag" content="全概率公式">
@@ -363,7 +363,7 @@ C)=P(A)+P(B)+P(C)-P(AB)-P(AC)-P(BC)+P(ABC)\]</span><br>若此时A、B、C互斥�
 class="math inline">\(P(A\cup B\cup
 C)=P(A)+P(B)+P(C)\)</span><br></p></li>
 <li><p><u><strong>独立与互斥的关系（！非常重要）</strong></u></p>
-<p>独立的性质：</p>
+<p><strong>独立的性质：</strong></p>
 <ul>
 <li><span class="math inline">\(A\)</span>与<span
 class="math inline">\(B\)</span>独立<span
@@ -383,7 +383,7 @@ class="math inline">\(\overline{B}\)</span>独立</li>
 P(B|A)=P(B|\overline{A})\Leftrightarrow
 P(B|A)+P(\overline{B}|\overline{A})=1\]</span></li>
 </ul>
-<p>互斥的性质：</p>
+<p><strong>互斥的性质：</strong></p>
 <ul>
 <li><span class="math inline">\(A\)</span>与<span
 class="math inline">\(B\)</span>互斥（互不相容）<span
@@ -395,26 +395,28 @@ P(AB)=0\)</span></li>
 class="math inline">\(B\)</span>独立，可以推出<span
 class="math inline">\(A\)</span>与<span
 class="math inline">\(B\)</span>不互斥。</p>
-<p>理由：<span class="math inline">\(P(AB)=P(A)P(B)&gt;0 \neq 0
-\Rightarrow AB\neq \varnothing\)</span>，故<span
-class="math inline">\(A\)</span>与<span
-class="math inline">\(B\)</span>不互斥</p>
+<p><strong><span style="color: #00008B; ">理由：<br><span
+class="math inline">\(P(AB)=P(A)P(B)&gt;0 \neq 0 \Rightarrow AB\neq
+\varnothing\)</span>，故<span class="math inline">\(A\)</span>与<span
+class="math inline">\(B\)</span>不互斥</span></strong></p>
 <p><span class="math inline">\(A\)</span>与<span
 class="math inline">\(B\)</span>互斥，可以推出<span
 class="math inline">\(A\)</span>与<span
 class="math inline">\(B\)</span>不独立。</p>
-<p>理由：<span class="math inline">\(AB=\varnothing \Rightarrow
-P(AB)=0\)</span> ，而<span class="math inline">\(P(A)P(B)&gt;0 \neq
+<p><strong><span style="color: #00008B; ">理由：<br><span
+class="math inline">\(AB=\varnothing \Rightarrow P(AB)=0\)</span>
+，而<span class="math inline">\(P(A)P(B)&gt;0 \neq
 P(AB)\)</span>，故<span class="math inline">\(A\)</span>与<span
-class="math inline">\(B\)</span>不独立</p>
-<p>最终得出的结论是，<span class="math inline">\(A\)</span>与<span
+class="math inline">\(B\)</span>不独立</span></strong></p>
+<p><strong><span style="color:#00BFFF; ">最终得出的结论是，<span
+class="math inline">\(A\)</span>与<span
 class="math inline">\(B\)</span>独立，则<span
 class="math inline">\(A\)</span>与<span
 class="math inline">\(B\)</span>不互斥。<span
 class="math inline">\(A\)</span>与<span
 class="math inline">\(B\)</span>互斥，则<span
 class="math inline">\(A\)</span>与<span
-class="math inline">\(B\)</span>不独立。</p></li>
+class="math inline">\(B\)</span>不独立。</span></strong></p></li>
 </ul>
 
                 
