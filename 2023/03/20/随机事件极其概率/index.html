@@ -24,7 +24,7 @@
 <meta property="og:description" content="基本概念 样本点\(\omega\)：随机试验的每一个基本可能结果称为一个样本点。 样本空间\(\Omega\)：随机试验的所有样本点的全体组成的集合。 随机事件：样本空间的子集称为随机事件，常用大写的字母\(A，B，C\)，...。 事件的关系与运算 不同事件  包含事件 （\(A\subset B\)）：事件A的发生必会导致B的发生。              注： \(AB">
 <meta property="og:locale" content="zh_CN">
 <meta property="article:published_time" content="2023-03-20T03:09:43.334Z">
-<meta property="article:modified_time" content="2023-03-23T01:45:07.860Z">
+<meta property="article:modified_time" content="2023-03-23T01:57:53.750Z">
 <meta property="article:author" content="__hfzh">
 <meta property="article:tag" content="贝叶斯公式">
 <meta property="article:tag" content="全概率公式">
@@ -222,7 +222,7 @@
       <span class="post-meta mr-2">
         <i class="iconfont icon-chart"></i>
         
-          2.9k 字
+          3.1k 字
         
       </span>
     
@@ -233,7 +233,7 @@
         
         
         
-          17 分钟
+          18 分钟
         
       </span>
     
@@ -297,7 +297,7 @@ class="math inline">\(A，B，C\)</span>，...。</p>
 <li><p>包含事件 （<span class="math inline">\(A\subset
 B\)</span>）：事件A的发生必会导致B的发生。</p>
 <div class="note note-secondary">
-            <p><strong>注： <span class="math inline">\(AB \subset A\)</span>，有<span class="math inline">\(P(AB)\leqP(A)\)</span>。<br>反之若是<span class="math inline">\(P(A)=P(B)\)</span>，则推不出<span class="math inline">\(A\subsetB\)</span></strong></p>
+            <p><strong>注： <span class="math inline">\(AB \subset A\)</span>，有<span class="math inline">\(P(AB)\leqP(A)\)</span>。<br>反之若是<span class="math inline">\(P(A)=P(B)\)</span>，则推不出$A=B $</strong></p>
           </div></li>
 <li><p>相等事件（<span class="math inline">\(A=B\)</span>）：<span
 class="math inline">\(A\subset B\)</span>且<span
@@ -323,6 +323,13 @@ class="math inline">\(B\)</span>不发生。</p>
 <div class="note note-secondary">
             <p><strong>注：<spanclass="math display">\[P(A-B)=P(A\overline{B})=P(A-AB)=P(A)-P(AB)\]</span><br>如果<spanclass="math inline">\(B\subset A\)</span>，那么<spanclass="math display">\[P(A-B)=P(A)-P(B)\]</span>，之所以写成上上式，是要把公共部分减去。</strong></p>
           </div></li>
+<li><p>伯努利试验：在每次的试验中，事件<span
+class="math inline">\(A\)</span>发生的概率为<span
+class="math inline">\(p\)</span>,则在<span
+class="math inline">\(n\)</span>重的独立伯努利试验中事件<span
+class="math inline">\(A\)</span>恰好发生的概率为：</p>
+<p><span
+class="math display">\[\displaystyle\binom{k}{n}p^k(1-p)^{n-k}，k=0,1,2,\cdots,n\]</span></p></li>
 </ul>
 <h3 id="运算律">运算律</h3>
 <ul>
@@ -441,7 +448,10 @@ class="math inline">\(B\)</span>不互斥。<span
 class="math inline">\(A\)</span>与<span
 class="math inline">\(B\)</span>互斥，则<span
 class="math inline">\(A\)</span>与<span
-class="math inline">\(B\)</span>不独立。</span></strong></p></li>
+class="math inline">\(B\)</span>不独立。</span></strong></p>
+<div class="note note-primary">
+            <p><strong>两两独立：任意两个事件之间独立。<br>相互独立：从<spanclass="math inline">\(n\)</span>个事件中任意挑出<spanclass="math inline">\(k\)</span>个事件它们直接都独立。</strong></p>
+          </div></li>
 </ul>
 
                 
