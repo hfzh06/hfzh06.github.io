@@ -18,15 +18,15 @@
   <meta name="author" content="__hfzh">
   <meta name="keywords" content="">
   
-    <meta name="description" content="基本概念 样本点\(\omega\)：随机试验的每一个基本可能结果称为一个样本点。 样本空间\(\Omega\)：随机试验的所有样本点的全体组成的集合。 随机事件：样本空间的子集称为随机事件，常用大写的字母\(A，B，C\)，...。 事件的关系与运算 不同事件  包含事件 （\(A\subset B\)）：事件A的发生必会导致B的发生。              注： \(AB">
+    <meta name="description" content="基本概念 样本点\(\omega\)：随机试验的每一个基本可能结果称为一个样本点。 样本空间\(\Omega\)：随机试验的所有样本点的全体组成的集合。 随机事件：样本空间的子集称为随机事件，常用大写的字母\(A\),\(B\),\(C\)，...。 事件的关系与运算 不同事件  包含事件(\(A\subset B\))：事件\(A\)的发生必会导致\(B\)的发生。">
 <meta property="og:type" content="article">
 <meta property="og:title" content="随机事件及其概率">
 <meta property="og:url" content="http://example.com/2023/03/20/%E9%9A%8F%E6%9C%BA%E4%BA%8B%E4%BB%B6%E6%9E%81%E5%85%B6%E6%A6%82%E7%8E%87/index.html">
 <meta property="og:site_name" content="Hexo">
-<meta property="og:description" content="基本概念 样本点\(\omega\)：随机试验的每一个基本可能结果称为一个样本点。 样本空间\(\Omega\)：随机试验的所有样本点的全体组成的集合。 随机事件：样本空间的子集称为随机事件，常用大写的字母\(A，B，C\)，...。 事件的关系与运算 不同事件  包含事件 （\(A\subset B\)）：事件A的发生必会导致B的发生。              注： \(AB">
+<meta property="og:description" content="基本概念 样本点\(\omega\)：随机试验的每一个基本可能结果称为一个样本点。 样本空间\(\Omega\)：随机试验的所有样本点的全体组成的集合。 随机事件：样本空间的子集称为随机事件，常用大写的字母\(A\),\(B\),\(C\)，...。 事件的关系与运算 不同事件  包含事件(\(A\subset B\))：事件\(A\)的发生必会导致\(B\)的发生。">
 <meta property="og:locale" content="zh_CN">
 <meta property="article:published_time" content="2023-03-20T03:09:43.334Z">
-<meta property="article:modified_time" content="2023-03-23T02:01:53.757Z">
+<meta property="article:modified_time" content="2024-04-25T06:42:08.559Z">
 <meta property="article:author" content="__hfzh">
 <meta property="article:tag" content="贝叶斯公式">
 <meta property="article:tag" content="全概率公式">
@@ -278,7 +278,7 @@
               <p class="note note-info">
                 
                   
-                    本文最后更新于：2023年3月23日 上午
+                    本文最后更新于：2024年4月25日 下午
                   
                 
               </p>
@@ -292,38 +292,43 @@ class="math inline">\(\omega\)</span></strong>：随机试验的每一个基本�
 <strong>样本空间<span
 class="math inline">\(\Omega\)</span></strong>：随机试验的所有样本点的全体组成的集合。<Br>
 <strong>随机事件：</strong>样本空间的子集称为随机事件，常用大写的字母<span
-class="math inline">\(A，B，C\)</span>，...。</p>
+class="math inline">\(A\)</span>,<span
+class="math inline">\(B\)</span>,<span
+class="math inline">\(C\)</span>，...。</p>
 <h2 id="事件的关系与运算">事件的关系与运算</h2>
 <h3 id="不同事件">不同事件</h3>
 <ul>
-<li><p>包含事件 （<span class="math inline">\(A\subset
-B\)</span>）：事件A的发生必会导致B的发生。</p>
+<li><p>包含事件(<span class="math inline">\(A\subset
+B\)</span>)：事件<span
+class="math inline">\(A\)</span>的发生必会导致<span
+class="math inline">\(B\)</span>的发生。</p>
 <div class="note note-secondary">
             <p><strong>注： <span class="math inline">\(AB \subset A\)</span>，有<span class="math inline">\(P(AB)\leqP(A)\)</span>。<br>反之若是<span class="math inline">\(P(A)=P(B)\)</span>，则推不出$A=B $</strong></p>
           </div></li>
-<li><p>相等事件（<span class="math inline">\(A=B\)</span>）：<span
+<li><p>相等事件(<span class="math inline">\(A=B\)</span>)：<span
 class="math inline">\(A\subset B\)</span>且<span
 class="math inline">\(A\supset B\)</span>。</p>
 <div class="note note-secondary">
             <p><strong>注：<span class="math inline">\(AB= A\)</span>，有<spanclass="math inline">\(P(AB)=P(A)\)</span>。<br>反之若是<spanclass="math inline">\(P(A)=P(B)\)</span>，则推不出<spanclass="math inline">\(A= B\)</span></strong></p>
           </div></li>
-<li><p>并事件（<span class="math inline">\(A\cup B\)</span>）：<span
-class="math inline">\(A，B\)</span>至少有一个发生。</p>
+<li><p>并事件(<span class="math inline">\(A\cup B\)</span>)：<span
+class="math inline">\(A\)</span>,<span
+class="math inline">\(B\)</span>至少有一个发生。</p>
 <div class="note note-secondary">
-            <p><strong>并运算遵循的是容斥原理：<br><spanclass="math inline">\(P(A\cup B)=P(A)+P(B)-P(AB)\)</span> <br><spanclass="math display">\[P(A\cup B\cupC)=P(A)+P(B)+P(C)-P(AB)-P(AC)-P(BC)+P(ABC)\]</span></strong></p>
+            <p><strong>并运算遵循的是容斥原理：<br><spanclass="math inline">\(P(A\cup B)=P(A)+P(B)-P(AB)\)</span> <br><spanclass="math inline">\(P(A\cup B\cupC)=P(A)+P(B)+P(C)-P(AB)-P(AC)-P(BC)+P(ABC)\)</span></strong></p>
           </div></li>
-<li><p>互斥事件（互不相容事件）：<span
+<li><p>互斥事件(互不相容事件)：<span
 class="math inline">\(AB=\varnothing\)</span>。</p>
 <div class="note note-secondary">
             <p><strong>注：<spanclass="math inline">\(AB=\varnothing\)</span>，有<spanclass="math inline">\(P(AB)=0\)</span>。<br>反之若是<spanclass="math inline">\(P(AB)=0\)</span>，则推不出<spanclass="math inline">\(AB=\varnothing\)</span></strong></p>
           </div></li>
 <li><p>对立事件：<span class="math inline">\(AB=\varnothing\)</span> 且
 <span class="math inline">\(A\cup B=\Omega\)</span></p></li>
-<li><p>差事件（<span class="math inline">\(A-B\)</span>）：<span
+<li><p>差事件(<span class="math inline">\(A-B\)</span>)：<span
 class="math inline">\(A\)</span>发生，而<span
 class="math inline">\(B\)</span>不发生。</p>
 <div class="note note-secondary">
-            <p><strong>注：<spanclass="math display">\[P(A-B)=P(A\overline{B})=P(A-AB)=P(A)-P(AB)\]</span><br>如果<spanclass="math inline">\(B\subset A\)</span>，那么<spanclass="math display">\[P(A-B)=P(A)-P(B)\]</span>，之所以写成上上式，是要把公共部分减去。</strong></p>
+            <p><strong>注：<spanclass="math inline">\(P(A-B)=P(A\overline{B})=P(A-AB)=P(A)-P(AB)\)</span><br>如果<spanclass="math inline">\(B\subset A\)</span>，那么<spanclass="math display">\[P(A-B)=P(A)-P(B)\]</span>，之所以写成上上式，是要把公共部分减去。</strong></p>
           </div></li>
 <li><p>伯努利试验：在每次的试验中，事件<span
 class="math inline">\(A\)</span>发生的概率为<span
@@ -331,7 +336,7 @@ class="math inline">\(p\)</span>,则在<span
 class="math inline">\(n\)</span>重的独立伯努利试验中事件<span
 class="math inline">\(A\)</span>恰好发生的概率为：</p>
 <p><span
-class="math display">\[\displaystyle\binom{k}{n}p^k(1-p)^{n-k}，k=0,1,2,\cdots,n\]</span></p></li>
+class="math display">\[\displaystyle\binom{k}{n}p^k(1-p)^{n-k},k=0,1,2,\cdots,n\]</span></p></li>
 </ul>
 <h3 id="运算律">运算律</h3>
 <ul>
@@ -351,7 +356,7 @@ style="color: #00008B; ">规律是是：交并互换 </span></strong></p></li>
 <h3 id="全概率公式与贝叶斯公式">全概率公式与贝叶斯公式</h3>
 <p>什么时候用全概率公式：<strong><span
 style="color: #20B2AA; ">若一个随机试验包含<u>两个阶段</u>，第一阶段有多种结果<span
-class="math inline">\(A_1，A_2，A_3\)</span>，求第二阶段事件<span
+class="math inline">\(A_1,A_2,A_3\)</span>，求第二阶段事件<span
 class="math inline">\(B\)</span>发生的概率，必用全概率公式。同时还要注意的是，在第三章中，<u>求&lt;离散，连续&gt;型随机变量的概率分布时</u>，视离散型随机变量的取值情况为完备事件组，用全概率公式求解。</span></strong></p>
 <p>全概率公式：<span
 class="math display">\[P(B)=\displaystyle\sum_{i=1}^nP(A_i)P(B|A_i)\]</span></p>
@@ -366,10 +371,10 @@ class="math display">\[P(A_i|B)=\displaystyle\frac{P(A_iB)}{P(B)}=\frac{P(A_i)P(
 class="math inline">\(B\)</span>事件发生的条件下由<span
 class="math inline">\(A_i\)</span>事件引发的概率是多大。</strong></p>
 <p>举例：甲乙丙三场生产商品，从三个厂抽查的概率分别为<span
-class="math inline">\(Q_1，Q_2，Q_3\)</span>，生产次品的概率分别是<span
-class="math inline">\(P_1，P_2，P_3\)</span>，就可以求出抽出的商品是次品的概率。从而就可以求出如果抽取的是次品，每个厂的概率是多大。</p>
+class="math inline">\(Q_1,Q_2,Q_3\)</span>，生产次品的概率分别是<span
+class="math inline">\(P_1,P_2,P_3\)</span>，就可以求出抽出的商品是次品的概率。从而就可以求出如果抽取的是次品，每个厂的概率是多大。</p>
 <div class="note note-primary">
-            <p><strong>注意： 这里容易翻车的一件事<br><spanclass="math inline">\(P(A|B)\neq P(A) \quad P(A,B)\neqP(A)\)</span>，这里显而易见，但是当做题目的时候就有可能忘记了，特别是求<u>&lt;离散，连续&gt;型随机变量的概率分布时</u>，是可以把<spanclass="math inline">\(B\)</span>条件往<spanclass="math inline">\(A\)</span>里带入缩减样本空间，但是<spanclass="math inline">\(B\)</span>这个条件不可以省略，必须写在后面，否则就会出现错误，不可以丢掉。求<u>&lt;离散，连续&gt;型随机变量的概率分布</u>这类题目时，可以先看下能不能使用乘法公式，如果不行，就直接看图划区域积分。可以见2016数学一概率第一个大题。</strong></p>
+            <p><strong>注意： 这里容易翻车的一件事。<spanclass="math inline">\(P(A|B)\neq P(A) \quad P(A,B)\neqP(A)\)</span>，这里显而易见，但是当做题目的时候就有可能忘记了，特别是求<u>&lt;离散，连续&gt;型随机变量的概率分布时</u>，是可以把<spanclass="math inline">\(B\)</span>条件往<spanclass="math inline">\(A\)</span>里带入缩减样本空间，但是<spanclass="math inline">\(B\)</span>这个条件不可以省略，必须写在后面，否则就会出现错误，不可以丢掉。求<u>&lt;离散，连续&gt;型随机变量的概率分布</u>这类题目时，可以先看下能不能使用乘法公式，如果不行，就直接看图划区域积分。可以见2016数学一概率第一个大题。</strong></p>
           </div>
 <h2 id="重要的性质">重要的性质</h2>
 <ul>
@@ -390,8 +395,8 @@ class="math inline">\(A\subset B\)</span>。</p>
 class="math inline">\(AB \subset A\)</span> ，有<span
 class="math inline">\(P(AB)\leq P(A)\)</span>解题
 。</span></strong></p></li>
-<li><p><span class="math display">\[P(A\cup B\cup
-C)=P(A)+P(B)+P(C)-P(AB)-P(AC)-P(BC)+P(ABC)\]</span><br>若此时A、B、C互斥，则<span
+<li><p><span class="math inline">\(P(A\cup B\cup
+C)=P(A)+P(B)+P(C)-P(AB)-P(AC)-P(BC)+P(ABC)\)</span><br>若此时A、B、C互斥，则<span
 class="math inline">\(P(A\cup B\cup
 C)=P(A)+P(B)+P(C)\)</span><br></p></li>
 <li><p><u><strong>独立与互斥的关系（！非常重要）</strong></u></p>
@@ -411,9 +416,11 @@ class="math inline">\({B}\)</span>独立<span
 class="math inline">\(\Leftrightarrow\)</span><span
 class="math inline">\(\overline{A}\)</span>与<span
 class="math inline">\(\overline{B}\)</span>独立</li>
-<li><span class="math display">\[ A与B独立\Leftrightarrow
-P(B|A)=P(B|\overline{A})\Leftrightarrow
-P(B|A)+P(\overline{B}|\overline{A})=1\]</span></li>
+<li><span class="math inline">\(A\)</span>与<span
+class="math inline">\(B\)</span>独立<span
+class="math inline">\(\Leftrightarrow P(B|A)\)</span>=<span
+class="math inline">\(P(B|\overline{A})\Leftrightarrow
+P(B|A)+P(\overline{B}|\overline{A})\)</span>=1</li>
 </ul>
 <p><strong>互斥的性质：</strong></p>
 <ul>
@@ -424,7 +431,7 @@ P(AB)=0\)</span></li>
 </ul>
 <p><BR></p>
 <p><strong>下面来证明独立与互斥的关系：</strong>前提是当<span
-class="math inline">\(P(A)&gt;0，P(B)&gt;0\)</span>时，</p>
+class="math inline">\(P(A)&gt;0,P(B)&gt;0\)</span>时，</p>
 <p><span class="math inline">\(A\)</span>与<span
 class="math inline">\(B\)</span>独立，可以推出<span
 class="math inline">\(A\)</span>与<span
